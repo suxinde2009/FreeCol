@@ -2609,7 +2609,7 @@ public class Unit extends GoodsLocation
      */
     private void spendAllMoves() {
         if (getColony() != null && getMovesLeft() < getInitialMovesLeft()) {
-            setMovesLeft(0);
+            ;//setMovesLeft(0);
         }
     }
 

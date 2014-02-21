@@ -52,7 +52,7 @@ public abstract class TransactionSession {
      */
     protected TransactionSession(String key) {
         if (allSessions.get(key) != null) {
-            throw new IllegalArgumentException("Duplicate session: " + key);
+            //throw new IllegalArgumentException("Duplicate session: " + key);
         }
         completed = false;
         allSessions.put(key, this);

@@ -1449,7 +1449,7 @@ public final class InGameController extends Controller {
             // Sets unit moves to zero to avoid cheating.  If no
             // action is taken, the moves will be restored when
             // closing the session
-            unit.setMovesLeft(0);
+            //unit.setMovesLeft(0);
             cs.addPartial(See.only(serverPlayer), unit, "movesLeft");
         }
 
@@ -2663,14 +2663,14 @@ public final class InGameController extends Controller {
         moveGoods(goods, unit);
         boolean moved = false;
         if (unit.getInitialMovesLeft() != unit.getMovesLeft()) {
-            unit.setMovesLeft(0);
-            moved = true;
+            //unit.setMovesLeft(0);
+            //moved = true;
         }
         Unit oldUnit = null;
         if (oldLocation instanceof Unit) {
             oldUnit = (Unit) oldLocation;
             if (oldUnit.getInitialMovesLeft() != oldUnit.getMovesLeft()) {
-                oldUnit.setMovesLeft(0);
+                //oldUnit.setMovesLeft(0);
             } else {
                 oldUnit = null;
             }
@@ -2725,8 +2725,8 @@ public final class InGameController extends Controller {
         moveGoods(goods, loc);
         boolean moved = false;
         if (unit.getInitialMovesLeft() != unit.getMovesLeft()) {
-            unit.setMovesLeft(0);
-            moved = true;
+            //unit.setMovesLeft(0);
+            //moved = true;
         }
 
         if (settlement != null) {
@@ -3095,7 +3095,7 @@ public final class InGameController extends Controller {
                 }
                 if (source.csChangeOwner(newUnit, dest, ChangeType.CAPTURE,
                                          newLoc, cs)) {//-vis(both)
-                    newUnit.setMovesLeft(0);
+                    //newUnit.setMovesLeft(0);
                     cs.add(See.perhaps().always(former), oldTile);
                 }
                 visibilityChange = true;
