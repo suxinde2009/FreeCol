@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *  Copyright (C) 2002-2013  The FreeCol Team
+    *
+    *  This file is part of FreeCol.
+    *
+    *  FreeCol is free software: you can redistribute it and/or modify
+    *  it under the terms of the GNU General Public License as published by
+    *  the Free Software Foundation, either version 2 of the License, or
+    *  (at your option) any later version.
+    *
+    *  FreeCol is distributed in the hope that it will be useful,
+    *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+    *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    *  GNU General Public License for more details.
+    *
+    *  You should have received a copy of the GNU General Public License
+    *  along with FreeCol.  If not, see <http://www.gnu.org/licenses/>.
+    *
+  -->
+<freecol-specification id="customHouseMakesTradeGoods">
+  <building-types>
+    <building-type id="model.building.customHouse" basicProduction="12" workplaces="3" consumes="model.goods.tools" produces="model.goods.tradeGoods" upkeep="15">
+      <required-goods id="model.goods.hammers" value="160"/>
+      <required-goods id="model.goods.tools" value="50"/>
+      <required-ability id="model.ability.buildCustomHouse"/>
+      <ability id="model.ability.export" value="true"/>
+    </building-type>
+  </building-types>
+</freecol-specification>
