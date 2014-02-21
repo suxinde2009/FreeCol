@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *  Copyright (C) 2002-2013  The FreeCol Team
+    *
+    *  This file is part of FreeCol.
+    *
+    *  FreeCol is free software: you can redistribute it and/or modify
+    *  it under the terms of the GNU General Public License as published by
+    *  the Free Software Foundation, either version 2 of the License, or
+    *  (at your option) any later version.
+    *
+    *  FreeCol is distributed in the hope that it will be useful,
+    *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+    *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    *  GNU General Public License for more details.
+    *
+    *  You should have received a copy of the GNU General Public License
+    *  along with FreeCol.  If not, see <http://www.gnu.org/licenses/>.
+    *
+  -->
+<freecol-specification id="betterWagonTrain">
+  <unit-types>
+    <unit-type id="model.unit.wagonTrain" extends="wagon" offence="0" defence="1" movement="1800"
+               scoreValue="1" spaceTaken="12" space="30">
+      <required-goods id="model.goods.hammers" value="40"/>
+      <ability id="model.ability.carryGoods" value="true"/>
+      <ability id="model.ability.canBeCaptured" value="true"/>
+      <limit id="model.limit.wagonTrains" operator="LT">
+        <leftHandSide operandType="UNITS" scopeLevel="PLAYER" />
+        <rightHandSide operandType="SETTLEMENTS" scopeLevel="PLAYER" />
+      </limit>
+    </unit-type>
+  </unit-types>
+</freecol-specification>
