@@ -445,6 +445,7 @@ public class ServerColony extends Colony implements ServerModelObject {
                 for (GoodsType g : spec.getGoodsTypeList()) {
                     if (g.isBuildingMaterial()
                         && !g.isRawMaterial()
+                        && !g.isBreedable()
                         && getAdjustedNetProductionOf(g) > 0
                         && neededForBuildableType(g)) {
                         cs.addMessage(See.only((ServerPlayer) owner),
