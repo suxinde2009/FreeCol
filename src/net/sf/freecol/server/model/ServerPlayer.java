@@ -106,7 +106,7 @@ public class ServerPlayer extends Player implements ServerModelObject {
     // TODO: move to options or spec?
     public static final int ALARM_RADIUS = 2;
     public static final int ALARM_TILE_IN_USE = 2;
-    public static final int ALARM_MISSIONARY_PRESENT = -30;
+    public static final int ALARM_MISSIONARY_PRESENT = -60;
 
     // checkForDeath results
     public static final int IS_DEAD = -1;
